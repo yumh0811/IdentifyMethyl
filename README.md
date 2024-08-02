@@ -47,6 +47,9 @@ head(Methylation_subgroups)
 The classifier returns a data.frame with 6 columns:
 
 `Methylation_subgroups`: the predicted class labels of the samples.
+
 `cor_pval`: the p-value associated with the Pearson's correlation between the sample and the nearest centroid.
+
 `separationLevel`: gives a measure (ranging from 0 to 1) of how a sample is representative of its consensus class, with 0 meaning the sample is too close to the other classes to be confidently assigned to one class label, and 1 meaning the sample is very representative of its class. It is measured as follows: (correlation to nearest centroid - correlation to second nearest centroid) / median difference of sample-to-centroid correlation.
-`M1 M2 M3`: The remaining three columns return the Pearson's correlation values for each sample and each centroid. 
+
+`M1` `M2` `M3`: The remaining three columns return the Pearson's correlation values for each sample and each centroid. 
