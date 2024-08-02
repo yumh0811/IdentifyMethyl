@@ -24,7 +24,7 @@ library(IdentifyMethyl)
 ``` {r}
 IdentifyMethyl(x, minCor = .2)
 ```
-`x`:  data.frame with CpGs from HM450K or Infinium MethylationEPIC (Epic) in rows and samples to be classified in columns (accepting a datafram with single columns namely one sample).
+`x`:  data.frame with CpGs from HM450K or Infinium MethylationEPIC (Epic) in rows and samples to be classified in columns (accepting a dataframe with a single column namely one sample).
 
 `minCor`: numeric value specifying a minimal threshold for best Pearson's correlation between a sample's methylation profile and centroids profiles. A sample showing no correlation above this threshold will remain unclassifed and prediction results will be set to NA. Default minCor value is 0.2.
 
